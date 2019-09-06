@@ -40,7 +40,7 @@
     </div>
 
     <div class="bg-light d-md-none" style="width: 100%;">
-        <p class="text-center mx-auto"><b>Hazwar Support Services</b></p>
+        <p class="text-center mx-auto" style="height:50px;"><b>Hazwar Support Services</b></p>
     </div>
 
     <div id="gallery" class="d-none d-md-block m-100 p-10">
@@ -188,7 +188,7 @@
                 var marker = L.marker([33.5517801, 73.1133026]).addTo(mymap);
                 marker.bindPopup("<b>Hazwar Support Services</b>").openPopup();
                 
-                var mymap = L.map('mapid-mob').setView([33.5517801, 73.1133026], 18);
+                var mymap = L.map('mapid-mob').setView([33.5517801, 73.1133026], 15);
                 
                 L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
                 attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
