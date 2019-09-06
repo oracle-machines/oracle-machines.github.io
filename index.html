@@ -38,6 +38,11 @@
             <a class="navbar-brand"><b>Hazwar Support Services</b></a>
         </nav>
     </div>
+
+        <nav class="navbar fixed-top navbar-light bg-light">
+            <a class="navbar-brand"><b>Hazwar Support Services</b></a>
+        </nav>
+
     <div id="gallery" class="d-none d-md-block m-100 p-10">
         <div id="carouselFade" class="carousel slide carousel-fade" data-ride="carousel">
             <div class="carousel-inner">
@@ -166,7 +171,7 @@
                     <div id="mapid" style="height: 400px;width: 400px;margin: 100px; display: table-cell " class="d-none d-md-block"></div>
                 </div>
             </div>
-            <div id="mapid" style="height: 400px;width: 400px;margin: 100px; display: table-cell " class="d-md-none"></div>
+            <div id="mapid-mob" style="height: 400px;width: 400px;margin: 100px; display: flex;" class="d-md-none"></div>
             <script>
                 var mymap = L.map('mapid').setView([33.5517801, 73.1133026], 18);
                 
@@ -178,7 +183,19 @@
                 }).addTo(mymap);
                 
                 var marker = L.marker([33.5517801, 73.1133026]).addTo(mymap);
-                marker.bindPopup("<b>Hazwar Support Services</b>").openPopup();   
+                marker.bindPopup("<b>Hazwar Support Services</b>").openPopup();
+                
+                var mymap = L.map('mapid-mob').setView([33.5517801, 73.1133026], 18);
+                
+                L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
+                attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+                maxZoom: 18,
+                id: 'mapbox.streets',
+                accessToken: 'pk.eyJ1IjoiaGFzc2Fua2FtcmFuMDEyIiwiYSI6ImNrMDZ5N2ZnZDAwdHczaW5ocTQxenJhZmgifQ.PA_IfDH-Qpm83bNzWEbTAg'
+                }).addTo(mymap);
+                
+                var marker = L.marker([33.5517801, 73.1133026]).addTo(mymap);
+                marker.bindPopup("<b>Hazwar Support Services</b>").openPopup();
             </script>
     </div>
     <div class="card text-white bg-dark">
