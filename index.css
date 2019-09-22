@@ -40,7 +40,6 @@ a.github-button{
 
 .landing{
     display: grid;
-    grid-template-columns: 5% 55% 40%;
 }
 
 .landing > .cover-img{
@@ -80,11 +79,19 @@ a.github-button{
     .grid {
         grid-template-columns: 33% 33% 33%;
   }
+
+  .landing{
+    grid-template-columns: 5% 45% 50%;
+}
 }
 
 @media screen and (max-width: 480px) {
     .grid {
         grid-template-columns: 100%;
+    }
+    
+    .landing{
+        grid-template-columns: 5% 70% 25%;
     }
 }
 
