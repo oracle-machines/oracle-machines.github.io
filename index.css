@@ -91,7 +91,7 @@ a.github-button{
     }
     
     .landing{
-        grid-template-columns: 5% 70% 25%;
+        grid-template-columns: 5% 60% 35%;
     }
 }
 
