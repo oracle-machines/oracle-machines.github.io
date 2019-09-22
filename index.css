@@ -40,7 +40,7 @@ a.github-button{
 
 .landing{
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 10% 40% 40% 10%;
 }
 
 .landing > .cover-img{
