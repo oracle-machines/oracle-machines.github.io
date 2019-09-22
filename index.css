@@ -1,6 +1,23 @@
 body {
     font-family: 'Roboto', sans-serif;
-  }
+}
+
+.header{
+    background: url(assets/Oracle-Machines_logo.png) left center;
+    background-repeat: no-repeat;
+    background-size: 32px;
+    background-position-x: 0.2em;
+    text-align: left;
+    vertical-align: middle;
+}
+.header > h1{
+    padding-left: 2em;
+}
+
+.center {
+    margin: auto;
+    text-align: center;
+}
 
 a.github-button{
     display: inline-block;
@@ -21,10 +38,14 @@ a.github-button{
     margin: 1em;
 }
 
-.center {
-    margin: auto;
-    text-align: center;
-  }
+.landing{
+    display: grid;
+    grid-template-columns: 10% 40% 50%;
+}
+
+.landing > .cover-img{
+    overflow: hidden;
+}
 
 .grid{
     padding-top: 2.5em;
