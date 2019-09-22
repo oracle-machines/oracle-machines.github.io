@@ -47,6 +47,18 @@ a.github-button{
     overflow: hidden;
 }
 
+.section{
+    background-color: #e7e7e7;
+    padding: 1em;
+    margin: 1em;
+}
+
+.white-section{
+    background-color: #ffffff;
+    padding: 1em;
+    margin: 1em;
+}
+
 .grid{
     padding-top: 2.5em;
     padding-bottom: 2.5em;
@@ -56,7 +68,6 @@ a.github-button{
     margin-right:1em;
     display: grid;
     grid-template-columns: 33% 33% 33%;
-    background-color: #e7e7e7;
 }
 
 .grid > .grid-item{
