@@ -78,11 +78,11 @@ a.github-button{
 @media screen and (min-width: 480px) {
     .grid {
         grid-template-columns: 33% 33% 33%;
-  }
+    }
 
   .landing{
     grid-template-columns: 5% 45% 50%;
-}
+    }
 }
 
 @media screen and (max-width: 480px) {
@@ -95,23 +95,16 @@ a.github-button{
     }
 }
 
-.text{
-    text-align: left;
-    padding: 2em;
-}
-
 .card{
     background: #fff;
     border-radius: 2px;
-    display: inline-block;
     height: 400px;
     margin: 1rem;
-    position: relative;
     width: 250px;
     box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
 }
 
-.card > p{
+.card > .card-detail{
     text-align: left;
 }
 
@@ -119,6 +112,11 @@ a.github-button{
     margin: 1em;
     height: 120px;
     width: 160px;
+}
+
+.card > .card-text{
+    text-align: center;
+    padding: 1em;
 }
 
 .footer{
